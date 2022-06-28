@@ -1,0 +1,105 @@
+.main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1fr, 10);
+  width: 90%;
+  height: fit-content;
+  margin: 2rem auto;
+}
+
+.filter {
+  grid-column: 1 / span 2;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 33rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.filterMain {
+  height: fit-content;
+}
+
+.filterTop {
+  width: 90%;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Product Sans", sans-serif;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.costFilter {
+  width: 90%;
+  margin: auto auto;
+}
+
+.costFilter > p {
+  font-family: "Product Sans", sans-serif;
+}
+
+.colorFilter {
+  width: 90%;
+  margin: auto auto;
+}
+
+.colorFilter > p {
+  font-family: "Product Sans", sans-serif;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.red,
+.lightblue,
+.yellow,
+.lightgreen,
+.goldenrod {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.red {
+  background: red;
+}
+
+.lightblue {
+  background: lightblue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.lightgreen {
+  background: lightgreen;
+}
+
+.goldenrod {
+  background: goldenrod;
+}
+
+.shoes {
+  grid-column: 3 / span 6;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.cart {
+  grid-column: 9 / span 2;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

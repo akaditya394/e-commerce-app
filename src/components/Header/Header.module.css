@@ -1,0 +1,30 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    justify-content: space-around;
+    font-family: 'Product Sans' , sans-serif;
+}
+
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
