@@ -1,0 +1,38 @@
+.team {
+  font-family: "Product Sans", sans-serif;
+}
+
+.members {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top {
+  width: 80%;
+  margin: 6rem auto 3.5rem auto;
+  text-align: center;
+}
+
+.top > h3 {
+  font-weight: 400;
+}
+
+.bottom {
+  width: 80%;
+  margin: 2.5rem auto 3.5rem auto;
+  text-align: center;
+}
+
+.bottom > h2 {
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .members {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+}

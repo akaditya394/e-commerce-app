@@ -1,0 +1,48 @@
+.member {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.img {
+  height: 10rem;
+  width: 12rem;
+}
+.image {
+  object-fit: contain;
+}
+
+.details {
+  line-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: x-large;
+  margin: 1rem auto 0 auto;
+}
+
+.position {
+  font-size: small;
+  margin: 1.5rem auto 0 auto;
+}
+
+.socials {
+  margin: 2rem auto;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.socials> img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
