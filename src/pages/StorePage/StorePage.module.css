@@ -1,16 +1,16 @@
 .main {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(1fr, 10);
-  width: 90%;
-  height: fit-content;
+  width: 95%;
   margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .filter {
-  grid-column: 1 / span 2;
   padding: 0.5rem;
   display: flex;
+  width: 22%;
+  min-width: fit-content;
   flex-direction: column;
   justify-content: flex-start;
   height: 33rem;
@@ -31,8 +31,9 @@
 }
 
 .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 1rem;
 }
 
 .costFilter {
@@ -89,14 +90,87 @@
   background: goldenrod;
 }
 
+.applyButton{
+  background: #000;
+  color:white;
+  margin: 2rem 0 0 7rem;
+  cursor: pointer;
+}
+
 .shoes {
-  grid-column: 3 / span 6;
+  padding: 0.5rem;
+  width: 48%;
+  min-width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.shoesTop {
+  width: 90%;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Product Sans", sans-serif;
+}
+
+/* .shoesMiddle{
+  width: 90%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.shoerack{
+  width: 95%;
+  display: flex;
+  margin:auto;
+}
+
+.sortShoes{
+  display: flex;
+  align-items: center;
+}
+
+.sortButton{
+  background-color: transparent;
+  font-family: 'Product Sans', sans-serif;
+}
+
+.cart {
+  width: 22%;
   padding: 0.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.cart {
-  grid-column: 9 / span 2;
-  padding: 0.5rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+@media(max-width:1200px){
+  .shoerack{
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:1275px){
+  .main{
+    flex-wrap: wrap;
+  }
+  .filter{
+    height: fit-content;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .shoes{
+    margin: 1rem 1rem;
+  }
+
+  .filterMain{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
 }
