@@ -4,6 +4,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 import StorePage from "./pages/StorePage/StorePage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import TheJourneyPage from "./pages/TheJourneyPage/TheJourneyPage";
+import "./App.css"
 
 function App() {
   return (
