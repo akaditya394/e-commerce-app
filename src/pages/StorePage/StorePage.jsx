@@ -230,17 +230,25 @@ function StorePage() {
                 <ShoppingBagIcon className={styles.icon} />
               </div>
             </div>
-            <div className={styles.cartMiddle}>
-              {cartItems.map((item) => (
-                <CartItem
-                  key={item.id}
-                  name={item.name}
-                  price={item.price}
-                  src={item.src}
-                  onClick={() => dispatch(removeItem(item.id))}
-                />
-              ))}
-            </div>
+            {cartItems.length > 0 ? (
+              <div className={styles.cartMiddle}>
+                {cartItems.map((item) => (
+                  <CartItem
+                    key={item.id}
+                    name={item.name}
+                    price={item.price}
+                    src={item.src}
+                    onClick={() => dispatch(removeItem(item.id))}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className={styles.emptyMessage}>
+                <div>
+                  <p>What's stopping you, designer?</p>
+                </div>
+              </div>
+            )}
             <div className={styles.cartBottom}>
               <div className={styles.address}>
                 <div>
