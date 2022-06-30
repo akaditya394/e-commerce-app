@@ -127,7 +127,7 @@
 
 .shoes {
   padding: 0.5rem;
-  width: fit-content;
+  width: 46%;
   min-width: fit-content;
   height: fit-content;
   display: flex;
@@ -219,11 +219,7 @@
   width: 1rem;
 }
 
-@media (max-width: 768px) {
-  /* .shoerack{
-    flex-wrap: wrap;
-  } */
-}
+
 
 @media (max-width: 1275px) {
   .main {
