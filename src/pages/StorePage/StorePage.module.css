@@ -3,13 +3,13 @@
   margin: 2rem auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .filter {
   padding: 0.5rem;
   display: flex;
-  width: 22%;
+  width: 23%;
   min-width: fit-content;
   flex-direction: column;
   justify-content: flex-start;
@@ -19,6 +19,14 @@
 
 .filterMain {
   height: fit-content;
+}
+
+.filterButton {
+  width: 20%;
+  background: #000;
+  color: white;
+  margin: auto;
+  font-family: "Product Sans", sans-serif;
 }
 
 .filterTop {
@@ -90,16 +98,36 @@
   background: goldenrod;
 }
 
-.applyButton{
+.button {
+  width: fit-content;
+  margin: auto;
+}
+
+.applyButton {
   background: #000;
-  color:white;
+  color: white;
   margin: 2rem 0 0 7rem;
   cursor: pointer;
 }
 
+.orderButton {
+  background: #000;
+  color: white;
+  margin: auto auto;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Product Sans", sans-serif;
+}
+
+.orderButton:disabled {
+  background-color: darkgray;
+}
+
 .shoes {
   padding: 0.5rem;
-  width: 48%;
+  width: fit-content;
   min-width: fit-content;
   height: fit-content;
   display: flex;
@@ -117,60 +145,128 @@
   font-family: "Product Sans", sans-serif;
 }
 
-/* .shoesMiddle{
-  width: 90%;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-.shoerack{
+.shoerack {
   width: 95%;
   display: flex;
-  margin:auto;
+  margin: auto;
 }
 
-.sortShoes{
+.sortShoes {
   display: flex;
   align-items: center;
 }
 
-.sortButton{
+.sortButton {
   background-color: transparent;
-  font-family: 'Product Sans', sans-serif;
+  font-family: "Product Sans", sans-serif;
 }
 
 .cart {
-  width: 22%;
   padding: 0.5rem;
+  display: flex;
+  width: 23%;
+  min-width: fit-content;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 33rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-
-@media(max-width:1200px){
-  .shoerack{
-    flex-wrap: wrap;
-  }
+.cartMain {
+  height: 80%;
 }
 
-@media(max-width:1275px){
-  .main{
+.cartTop {
+  width: 90%;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Product Sans", sans-serif;
+}
+
+.cartMiddle {
+  height: 85%;
+  width: 95%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}
+
+.address {
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+
+.address > div {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0.5rem;
+  gap: 4px;
+  color: gray;
+}
+
+.address > div > p {
+  font-size: small;
+}
+
+.addressIcon {
+  height: 1rem;
+  width: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* .shoerack{
+    flex-wrap: wrap;
+  } */
+}
+
+@media (max-width: 1275px) {
+  .main {
     flex-wrap: wrap;
   }
-  .filter{
+
+  .filter {
     height: fit-content;
     margin: 2rem auto;
     padding: 1rem;
+    width: 80%;
   }
 
-  .shoes{
+  .cart {
+    height: fit-content;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 80%;
+  }
+
+  .shoes {
     margin: 1rem 1rem;
   }
 
-  .filterMain{
+  .cartMiddle {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+
+  .filterMain {
     gap: 1rem;
     display: flex;
     flex-direction: row;
+    height: fit-content;
+  }
+
+  .cartMain {
+    gap: 1rem;
+    width: 100%;
     height: fit-content;
   }
 }

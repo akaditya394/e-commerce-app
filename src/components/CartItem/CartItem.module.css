@@ -1,0 +1,75 @@
+.cartItem {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  margin: 0.5rem auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imgDiv {
+  background-color: whitesmoke;
+  height: 100%;
+  width: fit-content;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  border: 1px solid red;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2rem;
+  color: red;
+  padding: 0 0.4rem;
+  font-size: small;
+  margin-left: -1.1rem;
+  margin-top: -0.5rem;
+  cursor: pointer;
+}
+
+.img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: contain;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 40%;
+}
+
+.details > div > p{
+    font-size: small;
+}
+
+.name > p {
+  font-size: medium;
+  margin: 0;
+  font-family: "Product Sans", sans-serif;
+}
+
+@media (max-width: 1275px) {
+  .img {
+    height: 10rem;
+  }
+  .imgDiv {
+    width: fit-content;
+    padding: 0 4rem;
+  }
+
+  .delete{
+      margin-left: -4.5rem;
+  }
+}
