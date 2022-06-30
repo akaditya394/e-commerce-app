@@ -61,8 +61,8 @@
   justify-content: space-around;
 }
 
-.red,
-.lightblue,
+.black,
+.whitesmoke,
 .yellow,
 .lightgreen,
 .goldenrod {
@@ -70,12 +70,12 @@
   width: 1.5rem;
 }
 
-.red {
-  background: red;
+.black {
+  background: black;
 }
 
-.lightblue {
-  background: lightblue;
+.whitesmoke {
+  background: whitesmoke;
 }
 
 .yellow {

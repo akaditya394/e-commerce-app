@@ -4,7 +4,10 @@ import "./FilterOption.module.css";
 function FilterOption(props) {
   return (
     <div>
-      <input type="checkbox" />
+      <input
+        onClick={props.onClick}
+        type="checkbox"
+      />
       <label>{props.label}</label>
     </div>
   );
